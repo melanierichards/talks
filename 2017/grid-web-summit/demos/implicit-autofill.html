@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Example</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Contains styles related to the demo but unrelated to Grid -->
+    <link rel="stylesheet" href="assets/style.css" />
+    
+    <style type="text/css">
+      @media (min-width: 64em) {
+
+        /* Basic experience */
+        .post-preview {
+          display: inline-block;
+          margin: 1.5em .75em;
+          width: 12em;
+          text-align: left;
+        }
+
+        .post-preview:first-child {
+          width: 25.5em;
+        }
+
+        @supports (object-fit: cover) {
+          .post-preview img {
+            width: 100%;
+            height: 12em;
+            object-fit: cover;
+          }
+        }
+
+        /* New Grid syntax */
+        @supports (display: grid) {
+          .posts {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, 12em);
+            grid-gap: 1.5em;
+            justify-content: center;
+          }
+
+          .post-preview {
+            margin: 0;
+            width: 100%;
+          }
+
+          .post-preview:first-child {
+            grid-column: 1 / span 2;
+            width: 100%
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav">
+        <a href="" class="header__brand">
+          <span class="sr-only">Contoso Kennel</span>
+          <svg xmlns="http://www.w3.org/2000/svg" width="84" height="73" viewBox="0 0 84 73"><path fill="#FF4343" d="M0 38.9h84v14H0z"/><g fill="#666"><path d="M10 10.6c-.9.5-1.7.6-2.4.6-2 0-3.3-.7-4.2-1.6-1-.9-1.7-2.3-1.7-4 0-1.7.7-3.1 1.7-4C4.4.6 5.8 0 7.5 0c.7 0 1.5.1 2.5.6v2.8c-.5-.5-1.3-1.1-2.5-1.1-.9 0-1.6.3-2.2.8-.6.6-1 1.4-1 2.5s.4 1.9.9 2.4c.2.2 1 .9 2.3.9.6 0 1.5-.2 2.4-1.1v2.8zM22.2 1.6c1 1 1.7 2.4 1.7 4 0 1.4-.5 2.9-1.7 4-1 1-2.3 1.6-4.1 1.6-2 0-3.4-.8-4.2-1.6-1-1-1.7-2.4-1.7-4 0-1.5.7-3.1 1.6-4C14.6.8 15.9 0 18 0c1.7 0 3.1.5 4.2 1.6zm-6.5 1.6c-.5.4-.9 1.2-.9 2.4 0 1 .3 1.8 1 2.4.7.7 1.5.9 2.3.9 1.1 0 1.9-.4 2.4-.9.4-.4.9-1.2.9-2.4 0-1.1-.4-1.9-.9-2.4-.7-.5-1.5-.9-2.5-.9-.9 0-1.8.3-2.3.9zM26.5 10.9V.2h2.1l5.8 6.9V.2h2.5v10.7h-2.1L29 4v6.9h-2.5zM43.8 2.3v8.6h-2.5V2.3H39V.2h7.1v2.1h-2.3zM57.4 1.6c1 1 1.7 2.4 1.7 4 0 1.4-.5 2.9-1.7 4-1 1-2.3 1.6-4.1 1.6-2 0-3.4-.8-4.2-1.6-1-1-1.7-2.4-1.7-4 0-1.5.7-3.1 1.6-4C49.7.9 51 0 53.2 0c1.8 0 3.1.5 4.2 1.6zm-6.5 1.6c-.4.4-.9 1.2-.9 2.4 0 1 .3 1.8 1 2.4.7.7 1.5.9 2.3.9 1.1 0 1.9-.4 2.4-.9.4-.4.9-1.2.9-2.4 0-1.1-.4-1.9-.9-2.4s-1.4-.9-2.4-.9-1.8.3-2.4.9zM67 2.8c-.8-.7-1.5-.8-1.8-.8-.3 0-.8 0-1 .4-.2.2-.3.4-.3.7 0 .3.1.4.2.6.3.3.7.3 1.4.6l.8.3c.5.2 1 .4 1.5.8.6.6.8 1.4.8 2 0 1.1-.4 2.1-.9 2.6-.9 1-2.3 1.1-3 1.1-.8 0-1.4-.1-2.1-.4-.5-.3-1.2-.8-1.6-1.2l1.3-1.8c.3.3.7.6 1 .8.3.4.7.5 1.2.5.3 0 .8-.1 1.1-.4.2-.2.4-.5.4-.9s-.1-.6-.4-.8c-.3-.2-.9-.5-1.2-.6l-.9-.3c-.5-.1-1.1-.3-1.5-.8-.6-.6-.6-1.3-.6-1.9 0-.9.3-1.7.9-2.4C63.1.2 64 0 65 0c.7 0 1.9.1 3.2 1.1L67 2.8zM80.5 1.6c1 1 1.7 2.4 1.7 4 0 1.4-.5 2.9-1.7 4-1 1-2.3 1.6-4.1 1.6-2 0-3.4-.8-4.2-1.6-1-1-1.7-2.4-1.7-4 0-1.5.7-3.1 1.6-4 .7-.7 2-1.6 4.2-1.6 1.7 0 3.1.5 4.2 1.6zM74 3.2c-.5.4-.9 1.2-.9 2.4 0 1 .3 1.8 1 2.4.7.7 1.5.9 2.3.9 1.1 0 1.9-.4 2.4-.9.4-.4.9-1.2.9-2.4 0-1.1-.4-1.9-.9-2.4s-1.4-.9-2.4-.9-1.8.3-2.4.9zM13.6 20.7l3.6-4.5h3l-4.3 5.1 4.7 5.6h-3.2l-3.8-4.7v4.7h-2.5V16.2h2.5v4.5zM28.7 18.3h-3.6v2.1h3.4v2.1h-3.4v2.4h3.6V27h-6V16.2h6v2.1zM31.7 26.9V16.2h2.1l5.8 6.9v-6.9h2.5v10.7H40L34.2 20v6.9h-2.5zM45.3 26.9V16.2h2.1l5.8 6.9v-6.9h2.5v10.7h-2.1L47.8 20v6.9h-2.5zM65 18.3h-3.6v2.1h3.4v2.1h-3.4v2.4H65V27h-6V16.2h6v2.1zM70.5 16.2v8.6h3.3v2.1H68V16.2h2.5z"/></g><circle fill="#EBA421" cx="42" cy="64.9" r="8"/></svg>
+        </a>
+        <ul class="header__info-pages">
+          <li>
+            <a href="">Features</a>
+          </li>
+          <li>
+            <a href="">Grooming Services</a>
+          </li>
+          <li>
+            <a href="">Pricing</a>
+          </li>
+          <li>
+            <a href="">Blog</a>
+          </li>
+        </ul>
+        <ul class="header__user-pages">
+          <li>
+            <a href="">Shop</a>
+          </li>
+          <li>
+            <a href="">Book a stay</a>
+          </li>
+          <li>
+            <a href="">Dashboard</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Blog</h1>
+      <ul class="bare posts">
+        <li class="post-preview">
+          <a href="">
+            <img src="https://melanie-richards.com/external/grid-web-summit/images/pexels-photo-388830.jpg" alt="" role="presentation" />
+            <h2>Shelter and space</h2>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </li>
+        <li class="post-preview">
+          <a href="">
+            <img src="https://melanie-richards.com/external/grid-web-summit/images/dog-black-labrador-black-dog-162149.jpg" alt="" role="presentation" />
+            <h2>Big dogs are often chill</h2>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </li>
+        <li class="post-preview">
+          <a href="">
+            <img src="https://melanie-richards.com/external/grid-web-summit/images/dog-race-fun-animal-38632.jpg" alt="" role="presentation" />
+            <h2>Agility!!!</h2>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </li>
+
+        <!-- TOGGLE THIS ITEM TO SEE HOW THE LAYOUT PERSISTS WHEN 4+ GRID ITEMS FIT IN A ROW
+        <li class="post-preview">
+          <a href="">
+            <img src="https://melanie-richards.com/external/grid-web-summit/images/french-bulldog-summer-smile-joy-160846.jpg" alt="" role="presentation" />
+            <h2>O hai</h2>
+          </a>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</p>
+        </li>
+        -->
+      </ul>
+    </main>
+  </body>
+</html>

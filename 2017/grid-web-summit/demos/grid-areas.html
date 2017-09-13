@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Grid areas example | CSS Grid</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Contains styles related to the demo but unrelated to Grid -->
+    <link rel="stylesheet" href="assets/basic.css" />
+
+    <style type="text/css">
+      @media (min-width: 64em) {
+
+        /* New syntax */
+        @supports (display: grid) {
+          .parent {
+            display: grid;
+            grid-template-rows: 1fr auto 6em 1fr;
+            grid-template-columns: 6em 16em auto;
+            grid-template-areas: "logo    nav     nav"
+                                 "side    side    main"
+                                 "side    side    social"
+                                 "foot    foot    foot";
+          }
+
+          .logo {
+            grid-area: logo;
+          }
+
+          .nav {
+            grid-area: nav;
+          }
+
+          .sidebar {
+            grid-area: side;
+          }
+
+          .main {
+            grid-area: main;
+          }
+
+          .social {
+            grid-area: social;
+          }
+
+          .footer {
+            grid-area: foot;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body class="parent parent--grid-areas">
+    <h1 class="logo">Logo</h1>
+    <nav class="nav">Nav</nav>
+    <div class="sidebar">Sidebar</div>
+    <article class="main">
+      <h2>Main</h2>
+      <p>Ut metus augue, interdum quis varius ut, commodo sit amet purus. Quisque dignissim sem ac pharetra facilisis. Cras ut efficitur nibh. Praesent eget elementum nibh. Vestibulum elementum, massa sed euismod vestibulum, dui purus eleifend orci, vitae accumsan erat turpis a nulla. In hac habitasse platea dictumst. Quisque lorem diam, congue vitae lobortis at, vulputate sed urna. Fusce id ex commodo, imperdiet est a, tempor orci. Duis rutrum et nisi nec sodales.</p>
+      <p>Donec maximus sit amet velit consectetur suscipit. Nunc ornare urna lobortis dolor cursus facilisis. Phasellus congue efficitur volutpat. Quisque ultrices risus velit, vitae cursus enim rutrum non. Nunc ornare eleifend lectus, vitae pulvinar augue lacinia at. Fusce arcu dolor, vulputate id molestie ut, dignissim sit amet erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam scelerisque convallis enim, nec pellentesque ante egestas vitae. Curabitur urna justo, iaculis ac imperdiet vel, posuere quis orci. Quisque finibus imperdiet sem finibus pharetra. Aenean tempor dignissim nisi ut interdum. Fusce molestie leo sed enim mollis tempus. Phasellus aliquet ligula leo, eu viverra augue vulputate sed.</p>
+      <p>Maecenas maximus ante non arcu rhoncus ultricies. In ornare commodo urna, vitae tempor magna consequat eu. Etiam dolor risus, scelerisque a risus id, viverra luctus tortor. Aliquam suscipit tempus blandit. Vestibulum luctus tortor at molestie condimentum. Donec eu justo sed justo volutpat interdum sit amet a elit. Praesent fermentum, nibh eu rhoncus semper, eros nibh imperdiet lorem, sed interdum sem orci a mi.</p>
+    </article>
+    <div class="social">Social</div>
+    <footer class="footer">Foot</footer>
+  </body>
+</html>

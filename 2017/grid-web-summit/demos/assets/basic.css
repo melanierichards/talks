@@ -1,0 +1,139 @@
+/*
+ *	=============================================
+ *	GENERAL
+ *	=============================================
+ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2em;
+  max-width: 100em;
+  font-size: 100%;
+  font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background: #222;
+  color: #000;
+}
+
+.sr-only {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+  padding:0 !important;
+  border:0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+p, ul, ol, img {
+  margin-bottom: 1em;
+}
+
+p:last-child, ul:last-child, ol:last-child, img:last-child {
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (min-width: 80em) {
+  body {
+    padding: 4em;
+  }
+}
+
+/*
+ *	BASIC EXAMPLE WITH EXPLICIT PLACEMENT
+ *  Grid-related props are in the demo.
+ *  No real fallback layouts here in order to
+ *  keep the example simple.
+ *	=============================================
+ */
+
+[class*="child-"] {
+  margin: 0 1.5em 1.5em;
+  padding: 2em;
+  background: #fff;
+}
+
+[class*="child-"] h2 {
+  margin-bottom: .5em;
+  font-weight: 300;
+}
+
+.child-1 {
+  background: #ee9889;
+}
+
+.child-3 {
+  background: #a7e4c1;
+}
+
+.child-3 h2 {
+  margin-bottom: 0;
+  font-size: 3.25em;
+}
+
+.child-4 {
+  background: #ddf7f2;
+}
+
+.child-4 ol {
+  margin-left: 1em;
+  font-size: 1.125em;
+}
+
+.child-5 {
+  background: #ffecdc;
+}
+
+/*
+ *	GRID AREAS EXAMPLE
+ *  Grid-related props are in the demo.
+ *  No real fallback layouts here in order to
+ *  keep the example simple.
+ *	=============================================
+ */
+
+.parent--grid-areas > * {
+  padding: 2em;
+  background: #fff;
+  text-align: center;
+}
+
+.logo {
+  font-weight: 400;
+  font-size: 1em;
+}
+
+.nav {
+  background: #ee9889;
+}
+
+.sidebar {
+  background: #a7e4c1;
+}
+
+.main {
+  background: #ffd679;
+}
+
+.main p {
+  text-align: left;
+}
+
+.social {
+  background: #ddf7f2;
+}
+
+.footer {
+  background: #ffecdc;
+}

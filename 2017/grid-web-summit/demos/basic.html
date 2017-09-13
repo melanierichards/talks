@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Basic example with explicit placement | CSS Grid</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Contains styles related to the demo but unrelated to Grid -->
+    <link rel="stylesheet" href="assets/basic.css" />
+
+    <style type="text/css">
+      @media (min-width: 64em) {
+        
+        /* Original syntax */
+        .parent {
+          display: -ms-grid;
+          -ms-grid-rows: (1fr)[3];
+          -ms-grid-columns: 22em 1fr 22em;
+        }
+
+        .child-1 {
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 3;
+          -ms-grid-column: 1;
+        }
+
+        .child-2 {
+          -ms-grid-row: 1;
+          -ms-grid-row-span: 3;
+          -ms-grid-column: 2;
+        }
+
+        .child-3, .child-4, .child-5 {
+          -ms-grid-column: 3;
+        }
+
+        .child-3 {
+          -ms-grid-row: 1;
+        }
+
+        .child-4 {
+          -ms-grid-row: 2;
+        }
+
+        .child-5 {
+          -ms-grid-row: 3;
+        }
+
+        /* New syntax */
+        @supports (display: grid) {
+          .parent {
+            display: grid;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-columns: 22em 1fr 22em;
+            grid-gap: 1.5em;
+          }
+
+          /* Reset margins from old syntax for sake of showing grid-gap */
+          [class*="child-"] {
+            margin: 0;
+          }
+
+          .child-1 {
+            grid-row: 1 / span 3;
+            grid-column: 1;
+          }
+
+          .child-2 {
+            grid-row: 1 / span 3;
+            grid-column: 2;
+          }
+
+          .child-3, .child-4, .child-5 {
+            grid-column: 3;
+          }
+
+          .child-3 {
+            grid-row: 1;
+          }
+
+          .child-4 {
+            grid-row: 2;
+          }
+
+          .child-5 {
+            grid-row: 3;
+          }
+        }
+      }
+
+      @media (min-width: 64em) and (max-width: 72em) {
+        .parent {
+          -ms-grid-columns: 12em 1fr 12em;
+          grid-template-columns: 16em 1fr 16em;
+        }
+
+        [class*="child"] {
+          padding: 1em;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main class="parent">
+      <h1 class="sr-only">Visually-hidden dashboard title</h1>
+      <section class="child-1">
+        <h2>Bork!</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet neque mattis, bibendum ligula et, dignissim tortor. Aenean auctor sodales ex, vitae suscipit mauris ullamcorper nec. Vivamus commodo elit ac ante mattis, ac lobortis lacus interdum. Sed condimentum, nisl in posuere aliquam, lacus nisi condimentum tortor, quis convallis lacus libero elementum tortor. Cras vitae nulla semper, elementum mauris id, semper lectus. Maecenas consequat felis et suscipit sollicitudin. Ut accumsan sit amet mauris at aliquet. Mauris iaculis magna quis lectus rhoncus, vel convallis elit tristique. Pellentesque blandit quam a tincidunt ornare. Aenean fermentum, sem non placerat viverra, velit ligula iaculis turpis, sit amet rhoncus nisi diam ac diam.</p>
+        <p>Nam id velit ac lectus maximus dictum sagittis vitae sem. Vivamus feugiat rutrum nibh ultrices pharetra. Sed commodo finibus eros quis ornare. Nulla cursus suscipit neque, in suscipit ipsum varius ut. Cras consectetur turpis eget feugiat ornare. Maecenas ac lorem pulvinar, varius nunc non, sagittis nibh. Vestibulum quis dignissim sapien, sed commodo.</p>
+      </section>
+      <section class="child-2" aria-label="Middle column">
+        <img src="https://melanie-richards.com/external/grid-web-summit/images/night-garden-yellow-animal.jpg" alt="Golden retriever" />
+        <p>Ut metus augue, interdum quis varius ut, commodo sit amet purus. Quisque dignissim sem ac pharetra facilisis. Cras ut efficitur nibh. Praesent eget elementum nibh. Vestibulum elementum, massa sed euismod vestibulum, dui purus eleifend orci, vitae accumsan erat turpis a nulla. In hac habitasse platea dictumst. Quisque lorem diam, congue vitae lobortis at, vulputate sed urna. Fusce id ex commodo, imperdiet est a, tempor orci. Duis rutrum et nisi nec sodales.</p>
+        <p>Donec maximus sit amet velit consectetur suscipit. Nunc ornare urna lobortis dolor cursus facilisis. Phasellus congue efficitur volutpat. Quisque ultrices risus velit, vitae cursus enim rutrum non. Nunc ornare eleifend lectus, vitae pulvinar augue lacinia at. Fusce arcu dolor, vulputate id molestie ut, dignissim sit amet erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Etiam scelerisque convallis enim, nec pellentesque ante egestas vitae. Curabitur urna justo, iaculis ac imperdiet vel, posuere quis orci. Quisque finibus imperdiet sem finibus pharetra. Aenean tempor dignissim nisi ut interdum. Fusce molestie leo sed enim mollis tempus. Phasellus aliquet ligula leo, eu viverra augue vulputate sed.</p>
+        <p>Maecenas maximus ante non arcu rhoncus ultricies. In ornare commodo urna, vitae tempor magna consequat eu. Etiam dolor risus, scelerisque a risus id, viverra luctus tortor. Aliquam suscipit tempus blandit. Vestibulum luctus tortor at molestie condimentum. Donec eu justo sed justo volutpat interdum sit amet a elit. Praesent fermentum, nibh eu rhoncus semper, eros nibh imperdiet lorem, sed interdum sem orci a mi.</p>
+      </section>
+      <section class="child-3">
+        <h2>They're good dogs</h2>
+      </section>
+      <section class="child-4">
+        <h2>Things dogs like:</h2>
+        <ol>
+          <li>Chasing squirrels</li>
+          <li>Horking down food</li>
+          <li>Chewing on things</li>
+          <li>Asserting authority</li>
+          <li>Cuddles</li>
+          <li>Intellectual discourse</li>
+        </ol>
+      </section>
+      <section class="child-5">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse sit amet neque mattis, bibendum ligula et, dignissim tortor. Aenean auctor sodales ex, vitae suscipit mauris ullamcorper nec. Vivamus commodo elit ac ante mattis, ac lobortis lacus interdum. Sed condimentum, nisl in posuere aliquam, lacus nisi condimentum tortor, quis convallis lacus libero elementum tortor. Cras vitae nulla semper, elementum mauris id, semper lectus. Maecenas consequat felis et suscipit.</p>
+      </section>
+    </main>
+  </body>
+</html>
