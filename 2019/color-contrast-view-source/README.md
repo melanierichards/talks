@@ -1,6 +1,19 @@
 # The Tailored Web: Effectively Honoring Visual Preferences
 
-To be presented Sep 30th, 2019 at [ViewSource Conf](https://2019.viewsourceconf.org/#schedule)
+To be presented Sep 30th, 2019 at [ViewSource Conf](https://2019.viewsourceconf.org/#schedule). Slides and transcript to be added.
+
+* [Demo page (Codepen)](https://codepen.io/somelaniesaid/pen/gVNMRG)
+
+## Resources
+
+* [`prefers-color-scheme` media query (specification)](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme)
+* [`color-scheme` property (specification)](https://www.w3.org/TR/css-color-adjust-1/#color-scheme-prop)
+* [`color scheme <meta>` name (specification)](https://www.w3.org/TR/css-color-adjust-1/#color-scheme-meta)
+* [`prefers-contrast` media query](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast)
+* [`forced-colors` media query](https://drafts.csswg.org/mediaqueries-5/#forced-colors)
+* [`forced-color-adjust` property (specification)](https://www.w3.org/TR/css-color-adjust-1/#forced)
+* [System colors (specification)](https://drafts.csswg.org/css-color/#css-system-colors)
+* [Windows VMs](https://developer.microsoft.com/en-us/microsoft-edge/tools/vms/)
 
 ## Credits
 
