@@ -4,12 +4,18 @@ To be presented Sep 30th, 2019 at [ViewSource Conf](https://2019.viewsourceconf.
 
 * [Demo page (Codepen)](https://codepen.io/somelaniesaid/pen/gVNMRG)
 
-## Resources
+### Color schemes
 
 * [`prefers-color-scheme` media query (specification)](https://drafts.csswg.org/mediaqueries-5/#prefers-color-scheme)
 * [`color-scheme` property (specification)](https://www.w3.org/TR/css-color-adjust-1/#color-scheme-prop)
 * [`color scheme <meta>` name (specification)](https://www.w3.org/TR/css-color-adjust-1/#color-scheme-meta)
+
+### Contrast preferences
+
 * [`prefers-contrast` media query](https://drafts.csswg.org/mediaqueries-5/#prefers-contrast)
+
+### Forced color modes (Windows High Contrast, etc)
+
 * [`forced-colors` media query](https://drafts.csswg.org/mediaqueries-5/#forced-colors)
 * [`forced-color-adjust` property (specification)](https://www.w3.org/TR/css-color-adjust-1/#forced)
 * [System colors (specification)](https://drafts.csswg.org/css-color/#css-system-colors)
