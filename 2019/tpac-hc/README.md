@@ -1,8 +1,15 @@
 # Finessing forced-colors: Optimizing the High Contrast Experience
 
-To be presented Sep 16th, 2019 at the [W3C Web Developer Meetup](https://www.w3.org/2019/09/Meetup/speakers.html). Slides and transcript to be added.
+To be presented Sep 16th, 2019 at the [W3C Web Developer Meetup](https://www.w3.org/2019/09/Meetup/speakers.html).
 
-* [Demo page (Codepen)](https://codepen.io/somelaniesaid/pen/gVNMRG)
+## Slides
+
+* [Slides PDF (slides only)](./slides/finessing-forced-colors.pdf)
+* [Slides PDF (slides with transcript/speaker notes)](./slides/finessing-forced-colors--with-notes.pdf)
+
+## Demo
+
+[Demo page on Codepen](https://codepen.io/somelaniesaid/pen/gVNMRG)
 
 ## Resources
 
