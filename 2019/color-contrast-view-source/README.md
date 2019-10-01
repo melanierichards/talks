@@ -1,8 +1,16 @@
 # The Tailored Web: Effectively Honoring Visual Preferences
 
-To be presented Sep 30th, 2019 at [ViewSource Conf](https://2019.viewsourceconf.org/#schedule). Slides and transcript to be added.
+## Slides
+
+* [Slides PDF (slides only)](./slides/melanie-richards-the-tailored-web.pdf)
+* [Slides PDF (with speaker notes)](./slides/melanie-richards-the-tailored-web--with-notes.pdf)
+* [Slides Powerpoint (with speaker notes)](./slides/melanie-richards-the-tailored-web.pptx)
+
+## Demo
 
 * [Demo page (Codepen)](https://codepen.io/somelaniesaid/pen/gVNMRG)
+
+## Resources
 
 ### Color schemes
 
