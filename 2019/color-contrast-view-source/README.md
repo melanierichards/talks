@@ -1,5 +1,7 @@
 # The Tailored Web: Effectively Honoring Visual Preferences
 
+[Recording of The Tailored Web: Effectively Honoring Visual Preferences - View Source 2019](https://www.youtube.com/watch?v=Z_QZhoBrWPc)
+
 ## Slides
 
 * [Slides PDF (slides only)](./slides/melanie-richards-the-tailored-web.pdf)
