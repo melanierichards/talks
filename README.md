@@ -2,6 +2,12 @@
 
 Resources, slides, and demos from talks I've given.
 
+## Upcoming talks
+
+| Talk              | Date  | Venue           |
+| :---------------- | :-----| :---------------|
+| [Moving the web forward with Microsoft Edge and Chromium](https://mybuild.microsoft.com/speaker/62b6e7fe-6e9a-4b11-afe0-b4d0a3624a24?source=sessiondetail&sessionId=a0f213d7-66f7-4a6e-a595-4c0d7acb2e6e) | May 19–20, 2020 | Microsoft Build (online) |
+
 ## Past talks
 
 | Talk              | Date  | Venue           | Available resources |
