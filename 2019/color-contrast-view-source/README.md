@@ -1,6 +1,6 @@
 # The Tailored Web: Effectively Honoring Visual Preferences
 
-[Recording of The Tailored Web: Effectively Honoring Visual Preferences - View Source 2019](https://www.youtube.com/watch?v=Z_QZhoBrWPc)
+[Recording](https://www.youtube.com/watch?v=Z_QZhoBrWPc), Sep 2019 at [ViewSource Conf](https://2019.viewsourceconf.org/#schedule) (Amsterdam, Netherlands)
 
 ## Slides
 

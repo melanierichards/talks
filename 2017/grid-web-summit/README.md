@@ -1,10 +1,6 @@
 # CSS Grid: Bringing true two-dimensional layout to the web
 
-Presented September 13, 2017 at the Microsoft Edge Web Summit
-
-## Presentation
-
-[Recording and slides](https://channel9.msdn.com/Events/WebPlatformSummit/Microsoft-Edge-Web-Summit-2017/ES08)
+[Recording and slides](https://channel9.msdn.com/Events/WebPlatformSummit/Microsoft-Edge-Web-Summit-2017/ES08), Sep 2017 at the Microsoft Edge Web Summit (Seattle, WA)
 
 ## Code Demos
 

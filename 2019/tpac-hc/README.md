@@ -1,6 +1,6 @@
 # Finessing forced-colors: Optimizing the High Contrast Experience
 
-To be presented Sep 16th, 2019 at the [W3C Web Developer Meetup](https://www.w3.org/2019/09/Meetup/speakers.html).
+[Recording and transcript](https://www.w3.org/2019/09/Meetup/speaker-melanie.html), Sep 2019 at the [W3C Developer Meetup](https://www.w3.org/2019/09/Meetup/speaker-melanie.html) (Fukuoka, Japan)
 
 ## Slides
 
