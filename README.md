@@ -4,7 +4,9 @@ Resources, slides, and demos from talks I've given.
 
 ## Upcoming talks
 
-None right now!
+| Talk              | Date  | Venue           |
+| :---------------- | :-----| :---------------|
+| [Semantics to Screen Readers](https://aneventapart.com/event/spring-summit-2021#s27032) | April 21, 2021 | [An Event Apart Spring Summit](https://aneventapart.com/event/spring-summit-2021) (online) |
 
 ## Past talks
 
