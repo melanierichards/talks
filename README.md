@@ -4,7 +4,9 @@ Resources, slides, and demos from talks I've given.
 
 ## Upcoming talks
 
-None planned right now!
+| Talk              | Date  | Venue           |
+| :---------------- | :-----| :---------------|
+| [Speaking of Accessibility: How Screen Readers Present Your Content](https://aneventapart.com/event/fall-summit-2021#s29276) | October 13, 2021 | [An Event Apart Fall Summit](https://aneventapart.com/event/fall-summit-2021) (online) |
 
 ## Past talks
 
