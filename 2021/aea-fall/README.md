@@ -80,7 +80,7 @@ The following resources are structured similarly to the talk outline.
 
 ### Potential Browser + Screen Reader Combinations
 
-These suggestions are largely based on common pairings from the [WebAIM screen reader user surveys](https://webaim.org/projects/), and anecdotal knowledge about accessibility API support. This is not a fully exhaustive list, so there are other valid combinations you might want to test. Screen reader names are linked to user docs.
+These suggestions are largely based on common pairings from the [WebAIM screen reader user surveys](https://webaim.org/projects/), and anecdotal knowledge about accessibility API support. This is not a fully exhaustive list, so there are other valid combinations you might want to test.
 
 | Operating System | Browser           | Screen Reader |
 | :--------------- | :---------------- | :-------------|
