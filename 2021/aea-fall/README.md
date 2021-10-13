@@ -86,7 +86,7 @@ These suggestions are largely based on common pairings from the [WebAIM screen r
 | :--------------- | :---------------- | :-------------|
 | Android          | Chrome            | Talkback |
 | MacOS, iOS       | Safari            | VoiceOver |
-| Windows          | Chrome            | JAWS |
+| Windows          | Chrome / MS Edge  | JAWS |
 | Windows          | Microsoft Edge    | Narrator |
 | Windows          | Firefox           | NVDA |
 | Windows          | Internet Explorer | JAWS |
